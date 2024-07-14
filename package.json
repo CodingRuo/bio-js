@@ -1,7 +1,25 @@
 {
-  "name": "bio-js",
+  "name": "bio-js-monorepo",
   "version": "0.1.0",
   "private": true,
+  "description": "A modular backend framework for Node.js",
+  "keywords": [
+    "nodejs",
+    "backend",
+    "framework",
+    "typescript",
+    "modular"
+  ],
+  "homepage": "https://github.com/CodingRuo/bio-js#readme",
+  "bugs": {
+    "url": "https://github.com/CodingRuo/bio-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingRuo/bio-js.git"
+  },
+  "license": "MIT",
+  "author": "CodingRuo",
   "scripts": {
     "build": "pnpm run -r build",
     "test": "pnpm run -r test",
@@ -11,5 +29,8 @@
     "version-packages": "changeset version",
     "release": "pnpm build && changeset publish"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "workspaces": [
+    "packages/*"
+  ]
 }
