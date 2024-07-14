@@ -27,7 +27,8 @@
     "dev": "node --watch ./scripts/dev.js",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "pnpm build && changeset publish"
+    "release": "pnpm build && changeset publish",
+    "release:cli": "cd packages/cli && pnpm publish"
   },
   "devDependencies": {},
   "workspaces": [
