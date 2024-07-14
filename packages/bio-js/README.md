@@ -7,13 +7,46 @@
 
 Bio-Js is a modular backend framework for Node.js, designed to provide a flexible and efficient solution for building server-side applications.
 
-## Features
+## Roadmap
 
-- Modular architecture
-- TypeScript support
-- Efficient routing
-- Middleware system
-- Customizable and extensible
+### Core Features (In Development)
+1. TypeScript Support
+2. Routing System
+   - HTTP request processing for various paths and methods
+   - Tree-based routing for efficiency
+   - Parameter and query extraction with TypeScript typing
+3. Middleware System
+4. HTTP Helpers
+   - Simplified handling of GET, POST, PUT, DELETE, etc.
+   - Automatic parsing of JSON requests and responses
+   - Query string parsing
+5. Static File Serving
+6. Error Handling
+   - Integrated error management
+   - Custom error pages
+7. Basic Security Features
+   - Setting essential HTTP headers
+   - Simple security configurations
+
+### Future Implementations
+- [ ] Content Negotiation (support for various response formats)
+- [ ] Plugin System
+- [ ] Configuration Management
+- [ ] Database Abstraction and Integration
+- [ ] Validation System
+- [ ] Logging System
+- [ ] Lifecycle Hooks
+- [ ] Auto-Loading of Modules (Routes, Plugins, etc.)
+- [ ] WebSocket Support
+- [ ] Caching Mechanisms
+- [ ] Authentication and Authorization
+- [ ] Advanced Security Features
+- [ ] Extended Event System
+- [ ] Microservice Architecture Support
+- [ ] GUI for Framework Control
+- [ ] Performance Monitoring
+- [ ] ORM (Object-Relational Mapping) Integration
+- [ ] Template Engine Integration
 
 ## Getting Started
 
