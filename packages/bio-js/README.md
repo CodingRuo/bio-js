@@ -15,52 +15,48 @@ Bio-Js is a modular backend framework for Node.js, designed to provide a flexibl
 - Middleware system
 - Customizable and extensible
 
-## Packages
-
-- bio-js: Core functionality of the framework
-- @bio-js/router: Advanced routing capabilities
-- @bio-js/middleware: Middleware system for request/response handling
-
 ## Getting Started
 
-To get started with Bio-Js, install the core package:
+To start a new Bio-Js project, you can use our CLI tool:
+
+```bash
+npx create-bio-js my-bio-js-app
+cd my-bio-js-app
+npm install
+npm start
+```
+
+Or, to add Bio-Js to an existing project:
 
 ```bash
 npm install bio-js
 ```
 
-For more detailed information on each package, please refer to their individual README files in the `packages` directory.
+## Basic Usage
 
-## Development
+Here's a simple example of how to use Bio-Js:
 
-This project uses pnpm as the package manager and Changeset for version management.
+```javascript
+const bioJs = require('bio-js');
 
-To set up the development environment:
+const app = bioJs();
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/CodingRuo/bio-js.git
-   cd bio-js
-   ```
+app.get('/', (req, res) => {
+  res.send('Hello, Bio-Js!');
+});
 
-2. Install dependencies:
-   ```bash
-   pnpm install
-   ```
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
+```
 
-3. Build all packages:
-   ```bash
-   pnpm build
-   ```
+## Documentation
 
-4. Run tests:
-   ```bash
-   pnpm test
-   ```
+For full documentation, please visit our [official documentation site](https://bio-js.dev).
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! If you'd like to contribute to Bio-Js, please check out our [GitHub repository](https://github.com/CodingRuo/bio-js) for more information.
 
 ## License
 
